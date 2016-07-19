@@ -1,4 +1,4 @@
-package auth
+package harborauth
 
 //Auth -
 type Auth interface {
