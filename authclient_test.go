@@ -23,7 +23,7 @@ func GetANil() *string {
 	return nil
 }
 
-// Flags
+// Flags for testing
 
 func TestMain(m *testing.M) {
 	flag.StringVar(&url, "url", "", "url for authorization")
