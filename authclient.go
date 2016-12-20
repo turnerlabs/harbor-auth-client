@@ -48,10 +48,6 @@ func (s *harborAuthClient) Login(username string, password string) (string, bool
 		return "", false, errors.New("Password is either less than the minimum of 8 or over the maximum number of 20 characters")
 	}
 
-	if !govalidator.IsAlpha(username) {
-		return "", false, errors.New("Usernames must be alphabetical")
-	}
-
 	in := loginIn{}
 	in.Username = username
 	in.Password = password
